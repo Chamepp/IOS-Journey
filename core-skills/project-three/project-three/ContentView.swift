@@ -114,7 +114,7 @@ struct ContentView: View {
                 // Final Conversion
                 Section {
                     Group {
-                        Text("-   \(final_conversion)   -")
+                        Text("-   \(final_conversion.formatted())   -")
                             .frame(maxWidth: .infinity, alignment: .center)
                             .font(.system(size: 25))
                     }
