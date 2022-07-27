@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     
     @State private var check_amount = 0.0
@@ -35,7 +36,6 @@ struct ContentView: View {
         
         return grand_total
     }
-    
     
     var body: some View {
         NavigationView {
