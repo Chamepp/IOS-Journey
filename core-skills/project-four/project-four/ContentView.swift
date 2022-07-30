@@ -10,8 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @State private var showScore = false
     @State private var showGameOver = false
+    @State private var showFinalResults = false
     @State private var score_title = ""
     @State private var score = 0
+    @State private var user_selected = 0
+    @State private var question_count = 0
+    @State private var round_count = 1
+    
     
     @State private var countries = ["Germany", "Estonia", "France", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain"].shuffled()
     @State private var correct_answer = Int.random(in: 0...2)
@@ -48,7 +53,8 @@ struct ContentView: View {
                     }
                     ForEach(0..<3) { number in
                         Button {
-                            flag_tapped(number)
+                            user_selected = number
+                            flag_tapped(user_selected)
                         } label: {
                             Image(countries[number])
                                 .renderingMode(.original)
@@ -88,7 +94,12 @@ struct ContentView: View {
         .alert("Game Over", isPresented: $showGameOver) {
             Button("Continue", action: ask_question)
         } message: {
-            Text("Your Score is Back To Zero")
+            Text("Wrong! That's \(countries[user_selected])")
+        }
+        .alert("Your Score: \(score)", isPresented: $showFinalResults) {
+            Button("Start a New Round", action: reset_game)
+        } message: {
+            Text("Round \(round_count) Finished")
         }
     }
     func flag_tapped(_ number: Int) {
@@ -107,6 +118,19 @@ struct ContentView: View {
     func ask_question() {
         countries.shuffle()
         correct_answer = Int.random(in: 0...2)
+        question_count += 1
+        
+        if question_count >= 8 {
+            showFinalResults = true
+        }
+    }
+    
+    func reset_game() {
+        score = 0
+        question_count = 0
+        round_count += 1
+        
+        ask_question()
     }
 }
 
