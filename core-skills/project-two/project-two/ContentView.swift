@@ -76,6 +76,7 @@ struct ContentView: View {
                 Section {
                     Group {
                         Text(total_price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                            .foregroundColor(tip_percentage == 0 ? .red : .black)
                     }
                 } header: {
                     Text("Total")
