@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41CCC7D02897D0E40031307D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		41FD941728965E0B005A3893 /* project-five.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-five.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FD941A28965E0B005A3893 /* project_fiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_fiveApp.swift; sourceTree = "<group>"; };
 		41FD941C28965E0B005A3893 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		41FD941928965E0B005A3893 /* project-five */ = {
 			isa = PBXGroup;
 			children = (
+				41CCC7D02897D0E40031307D /* Info.plist */,
 				41FD941A28965E0B005A3893 /* project_fiveApp.swift */,
 				41FD941C28965E0B005A3893 /* ContentView.swift */,
 				41FD941E28965E0B005A3893 /* Assets.xcassets */,
@@ -269,6 +271,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"project-five/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "project-five/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,6 +301,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"project-five/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "project-five/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
