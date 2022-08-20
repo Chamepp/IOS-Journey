@@ -39,6 +39,7 @@ struct ContentView: View {
     @State private var user_selected = 0
     @State private var question_count = 0
     @State private var round_count = 1
+    @State private var selectedFlag = -1
     
     
     @State private var countries = ["Germany", "Estonia", "France", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain"].shuffled()
@@ -79,8 +80,14 @@ struct ContentView: View {
                             flag_tapped(user_selected)
                         } label: {
                             Image(countries[number])
+                                .renderingMode(.original)
                                 .modifier(FlagImage())
-                                
+                                .rotation3DEffect(.degrees(selectedFlag == number ? 360 : 0), axis: (x: 0, y: 1, z: 0))
+                                .opacity(selectedFlag == -1 || selectedFlag == number ? 1.0 : 0.25)
+                                .animation(.default, value: selectedFlag)
+                                .scaleEffect(selectedFlag == -1 || selectedFlag == number ? 1.0 : 0.25)
+                                .saturation(selectedFlag == -1 || selectedFlag == number ? 1 : 0)
+                                .blur(radius: selectedFlag == -1 || selectedFlag == number ? 0 : 3)
                         }
                     }
                 }
@@ -133,6 +140,7 @@ struct ContentView: View {
             score = 0
             showGameOver = true
         }
+        selectedFlag = number
         
     }
     
@@ -140,6 +148,7 @@ struct ContentView: View {
         countries.shuffle()
         correct_answer = Int.random(in: 0...2)
         question_count += 1
+        selectedFlag = -1
         
         if question_count >= 8 {
             showFinalResults = true
