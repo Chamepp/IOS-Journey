@@ -4,10 +4,10 @@ https://www.hackingwithswift.com/100/swiftui
 ## Completion status
 Type               | Number  | Completion
 :---               |  :---:  |   :---:
-Projects           | 19 / 19 | 100%
-Challenges         | 57 / 57 | 100%
-Milestone Projects |  6 / 6  | 100%
-Challenge days     |  1 / 1  | 100%
+Projects           | 10 / 19 | 52.6%
+Challenges         | 16 / 57 | 28%
+Milestone Projects |  2 / 6  | 33%
+Challenge days     |  0 / 1  | 0%
 ## Preview
 *Within each project are larger versions of the screenshots.*
 Projects / Topics                                                                                                                                                            | Screenshots
