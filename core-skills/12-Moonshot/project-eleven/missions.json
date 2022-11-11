@@ -19,7 +19,7 @@
 	},
 	{
 		"id": 7,
-        "launchDate": "1968-10-11",
+        "launch_date": "1968-10-11",
 		"crew": [
             {
                 "name": "schirra",
@@ -38,7 +38,7 @@
 	},
 	{
 		"id": 8,
-        "launchDate": "1968-12-21",
+        "launch_date": "1968-12-21",
 		"crew": [
             {
                 "name": "borman",
@@ -57,7 +57,7 @@
 	},
 	{
 		"id": 9,
-        "launchDate": "1969-03-03",
+        "launch_date": "1969-03-03",
 		"crew": [
             {
                 "name": "mcdivitt",
@@ -76,7 +76,7 @@
 	},
 	{
 		"id": 10,
-        "launchDate": "1969-05-18",
+        "launch_date": "1969-05-18",
 		"crew": [
             {
                 "name": "stafford",
@@ -95,7 +95,7 @@
 	},
 	{
 		"id": 11,
-        "launchDate": "1969-07-16",
+        "launch_date": "1969-07-16",
 		"crew": [
             {
                 "name": "armstrong",
@@ -114,7 +114,7 @@
 	},
 	{
 		"id": 12,
-        "launchDate": "1969-11-14",
+        "launch_date": "1969-11-14",
 		"crew": [
             {
                 "name": "conrad",
@@ -133,7 +133,7 @@
 	},
 	{
 		"id": 13,
-        "launchDate": "1970-04-11",
+        "launch_date": "1970-04-11",
 		"crew": [
             {
                 "name": "lovell",
@@ -152,7 +152,7 @@
 	},
 	{
 		"id": 14,
-        "launchDate": "1971-01-31",
+        "launch_date": "1971-01-31",
 		"crew": [
             {
                 "name": "shepard",
@@ -171,7 +171,7 @@
 	},
 	{
 		"id": 15,
-        "launchDate": "1971-07-26",
+        "launch_date": "1971-07-26",
 		"crew": [
             {
                 "name": "scott",
@@ -190,7 +190,7 @@
 	},
 	{
 		"id": 16,
-        "launchDate": "1972-04-16",
+        "launch_date": "1972-04-16",
 		"crew": [
             {
                 "name": "young",
@@ -209,7 +209,7 @@
 	},
 	{
 		"id": 17,
-        "launchDate": "1972-12-07",
+        "launch_date": "1972-12-07",
 		"crew": [
             {
                 "name": "cernan",

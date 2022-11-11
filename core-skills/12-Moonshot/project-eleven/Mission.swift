@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Mission: Codable {
+struct Mission: Codable, Identifiable {
     
     struct CrewRole: Codable {
         let name: String
@@ -15,7 +15,19 @@ struct Mission: Codable {
     }
     
     let id: Int
-    let launch_date: String?
+    let launch_date: Date?
     let crew: [CrewRole]
     let description: String
+    
+    var display_name: String {
+        "Apollo \(id)"
+    }
+    
+    var image: String {
+        "apollo\(id)"
+    }
+    
+    var formatted_launch_date: String {
+        launch_date?.formatted(date: .abbreviated, time: .omitted) ?? "N/A"
+    }
 }
